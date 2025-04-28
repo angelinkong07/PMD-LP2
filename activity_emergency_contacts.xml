@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="24dp"/>
+
+    <!-- Contacts List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addContactButton"
+        android:layout_below="@id/title"
+        android:padding="16dp"/>
+
+    <!-- Add Contact Button -->
+    <LinearLayout
+        android:id="@+id/addContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/backButton"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button_coral"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contact"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

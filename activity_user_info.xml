@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Information"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_profile_placeholder"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="Profile picture"/>
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/editProfileButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/ic_edit"
+            android:contentDescription="Edit profile"/>
+
+        <!-- Information Fields -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angelin Kong"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="012-5912708"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/addressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menara U, Seksyen 13, Jalan Boling Padang, Shah Alam, Selangor"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical Information:"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/medField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visually Impaired"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Save Button -->
+        <LinearLayout
+            android:id="@+id/saveButton"
+            android:layout_width="361dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button_brown"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_save" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Save Information"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

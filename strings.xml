@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cazulang Navigation</string>
+    <string name="settings_button_description">Settings</string>
+    <string name="profile_button_description">User profile</string>
+    <string name="voice_command_button_description">Press and hold to speak your destination</string>
+    <string name="welcome_prompt">Where would you like to go?</string>
+</resources>
